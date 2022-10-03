@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Lato:wght@300;400;700&display=swap');
+
+
+body{
+    font-family: 'Abyssinica SIL', serif;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+h2{
+    color:#f8e804; 
+}
+
+.container-fluid{ 
+    background-color:rgb(0, 0, 111);
+    height: 80px;
+    
+    
+    
+
+}
+
+i {
+    font-size: 1.8rem;
+    color:#f8e804; 
+}
+
+.icon i{
+    margin:0.8rem;
+    padding-top:0.3rem;
+    color: #f8e804;
+}
+
+.logo h2{
+    margin: 0.7rem;
+}
+
+.busca{
+    height: 100px;
+}

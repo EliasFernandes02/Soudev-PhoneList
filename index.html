@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+ 
+    <title>Phone List</title>
+</head>
+<body>
+<header>    
+    <div class="container-fluid ">
+        <div class=" d-flex">
+            <div class="icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="logo">
+                <h2 >PhoneList</h2>
+            </div>
+        
+        </div>
+    </div>
+</header>
+
+    
+<main>
+
+        <div class="busca text-end row">
+            <!-- Button trigger modal -->
+
+            <div class="col m-3">
+                <input id="input_filtrar" onkeyup="filtrar()" type="text" class="form-control" placeholder="Buscar">
+            </div>
+            <div class="col text-end m-3">
+                <button type="button" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Nova pessoa
+                </button>
+            </div>
+          
+    
+        </div>
+       
+
+        <table class="table table-striped ">
+            <thead class="table-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Cidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabela_pessoas">
+
+            </tbody>
+        </table>
+
+        <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cadastro de Pessoa</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form  id="formAdd"action="" onsubmit="inserir()">
+                <div class="modal-body">
+                
+                <input class="form-control mb-3" placeholder="Digite seu nome"id="input_nome">
+                <input class="form-control mb-3" placeholder="Digite o telefone"id="input_telefone">
+                <input class="form-control"  placeholder="Digite sua cidade"id="input_cidade">
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary" id="">Salvar </button>
+                </div>
+            </form>
+            
+        </div>
+        </div>
+    </div>
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEditar" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Editar Item</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <form action="" id="formEditar" onsubmit="editarDados()">
+            <input type="hidden" id="input_editar_id">
+    
+            <label for="input_editar_item">Nome da Pessoa</label>
+            <input type="text" id="input_editar_nome" class="form-control mb-3">
+    
+    
+            
+            <label for="input_editar_quantidade">Cidade</label>
+            <input type="text" id="input_editar_cidade" class="form-control mb-3">
+
+            <label for="input_editar_quantidade">Telefone</label>
+            <input type="text" id="input_editar_telefone" class="form-control mb-3">
+    
+    
+            <div class="d-grid">
+              <button class="btn btn-primary" >Enviar</button>
+    
+            </div>
+    
+          </form>
+          
+        </div>
+      </div>
+
+
+     
+</main>
+   
+
+
+
+   
+
+
+    
+
+
+
+
+
+
+    <script src="eventos.js"></script>
+
+    <script src="filtrar.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/52b13b8b2d.js" crossorigin="anonymous"></script>
+</body>
+</html>
