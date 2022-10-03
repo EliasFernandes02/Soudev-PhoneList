@@ -1,5 +1,5 @@
 
-1) Instalar o nodeJS
+1)Instalar o nodeJS
 
 2)instalar json-server
 
@@ -9,7 +9,7 @@
 
 5)no terminaL execute npx json-server db.json --port 8002
 
-6) Eu utilizei essas rotas: 
+6)Eu utilizei essas rotas: 
 
 Se quiser, instale o imnsonia e teste as rotas 
 
