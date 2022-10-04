@@ -1,12 +1,6 @@
 {
   "pessoas": [
     {
-      "nome": "Joao carlos",
-      "telefone": "8279832892",
-      "cidade": "Rio de Janeiro",
-      "id": 6
-    },
-    {
       "nome": "Carlos",
       "telefone": "2837194821",
       "cidade": "Quixadá",
@@ -23,6 +17,18 @@
       "telefone": 2948934203,
       "cidade": "Quixere",
       "id": 9
+    },
+    {
+      "nome": "Elias",
+      "telefone": 92483091238,
+      "cidade": "Fortaleza",
+      "id": 10
+    },
+    {
+      "nome": "Josefina",
+      "telefone": "2893719712",
+      "cidade": "carai",
+      "id": 11
     }
   ]
 }

@@ -31,6 +31,7 @@ function inserir() {
 
 
 
+
 //listar 
 
 function atualizarListas() {
@@ -49,7 +50,7 @@ function atualizarListas() {
         lista.forEach(function (cadaItem) {
             tabela_pessoas.innerHTML +=`  
             <tr>
-            <td> <input onclick ="acionarBotaoExcluir()" data-check="acao" type="checkbox"> </td>
+            <td> <input onclick ="acionarBotaoExcluir()"  value="${cadaItem.id}" data-check="acao" type="checkbox"> </td>
                 <td>${cadaItem.id}</td>
                 <td>${cadaItem.nome}</td>
                 <td>${cadaItem.telefone}</td>
@@ -65,14 +66,13 @@ function atualizarListas() {
     })
    
 }
-
 atualizarListas();
 
 
 
 //Deletar
 async function excluir(id) {
-    let resposta = confirm('Tem certeza') //não apaga direto.
+    let resposta = confirm('Tem certeza') 
 
     if(resposta !== true){
         return;
@@ -155,6 +155,7 @@ function marcarTodos() {
         }
         // cadaCheck.checked = check_all.checked;
     });
+    
 }
 
 

@@ -28,25 +28,25 @@
 
     
 <main>
-
+<!-- Botão de cadastro e input de pesquisa -->
         <div class="busca text-end row">
             <!-- Button trigger modal -->
 
             <div class="col m-3">
                 <input id="input_filtrar" onkeyup="filtrar()" type="text" class="form-control" placeholder="Buscar">
             </div>
+
             <div class="col text-end m-3">
                 <button type="button" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Nova pessoa
                 </button>
-                <button id="btnRemoveAll" class="col text-end btn btn-danger d-none">Excluir selecionados</button>
+                
             </div>
-            
-          
-    
+               
         </div>
+<!-- Fim do botão de cadastro e input de pesquisa -->
        
-
+<!-- Tabela -->
         <table class="table table-striped ">
             <thead class="table-dark">
                 <tr>
@@ -62,8 +62,9 @@
 
             </tbody>
         </table>
+<!-- Fim da tabela -->
 
-        <!-- Modal -->
+<!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
@@ -87,7 +88,9 @@
         </div>
         </div>
     </div>
+<!-- Fim do modal -->
 
+<!-- Editar inputs -->
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEditar" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
@@ -119,30 +122,16 @@
           
         </div>
       </div>
-
+<!-- Fim editar inputs -->
 
      
 </main>
    
-
-
-
-   
-
-
-    
-
-
-
-
-
-
     <script src="eventos.js"></script>
 
     <script src="filtrar.js"></script>
-    <script src="excluir.js"></script>
-
-    <!-- JavaScript Bundle with Popper -->
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/52b13b8b2d.js" crossorigin="anonymous"></script>

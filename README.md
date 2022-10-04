@@ -1,4 +1,4 @@
-
+## Instruções ##
 1)Instalar o nodeJS
 
 2)instalar json-server
@@ -22,3 +22,8 @@ Se quiser, instale o imnsonia e teste as rotas
 -DELETE "http://localhost:8002/pessoas/id"
 
 7)abrir o index.html no navegador e teste diretamente na página
+
+
+## Considerações ##
+
+- Existiu a possibilidade de implementar uma nova função que selecionaria e deletaria mais de uma linha, porém como ocorreram imprevistos, tomei a liberdade de optar não implementar pois não estava funcionando como deveria. Optei por entregar um crud com menos funcionalidades porém funcional.
