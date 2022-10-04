@@ -1,12 +1,6 @@
 {
   "pessoas": [
     {
-      "nome": "Xeiro verde",
-      "telefone": "878392889",
-      "cidade": "Mauriti",
-      "id": 5
-    },
-    {
       "nome": "Joao carlos",
       "telefone": "8279832892",
       "cidade": "Rio de Janeiro",
@@ -23,6 +17,12 @@
       "telefone": "9834293",
       "cidade": "Gatolinda",
       "id": 8
+    },
+    {
+      "nome": "molina",
+      "telefone": 2948934203,
+      "cidade": "Quixere",
+      "id": 9
     }
   ]
 }

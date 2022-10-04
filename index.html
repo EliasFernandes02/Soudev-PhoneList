@@ -39,7 +39,9 @@
                 <button type="button" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Nova pessoa
                 </button>
+                <button id="btnRemoveAll" class="col text-end btn btn-danger d-none">Excluir selecionados</button>
             </div>
+            
           
     
         </div>
@@ -48,6 +50,7 @@
         <table class="table table-striped ">
             <thead class="table-dark">
                 <tr>
+                    <th> <input  id="check_all" onclick="marcarTodos()" type="checkbox" > </th>
                     <th>Id</th>
                     <th>Nome</th>
                     <th>Telefone</th>
@@ -137,6 +140,7 @@
     <script src="eventos.js"></script>
 
     <script src="filtrar.js"></script>
+    <script src="excluir.js"></script>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

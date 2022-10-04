@@ -13,9 +13,10 @@ function filtrar(){
 
         } 
 
-      let colunaItem = linhas[posicao].children[1].innerText.toLowerCase()
-      let colunaQuantidade = linhas[posicao].children[2].innerText.toLowerCase()
-      let colunas = colunaItem + colunaQuantidade;
+      let colunaNome = linhas[posicao].children[1].innerText.toLowerCase()
+      let colunaTelefone = linhas[posicao].children[2].innerText.toLowerCase()
+      let colunaCidade = linhas[posicao].children[2].innerText.toLowerCase()
+      let colunas = colunaNome + colunaTelefone + colunaCidade;
      
         
       if(colunas.includes(letras)){
@@ -26,3 +27,5 @@ function filtrar(){
       }
     }
 }
+
+

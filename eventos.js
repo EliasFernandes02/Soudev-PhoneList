@@ -49,6 +49,7 @@ function atualizarListas() {
         lista.forEach(function (cadaItem) {
             tabela_pessoas.innerHTML +=`  
             <tr>
+            <td> <input onclick ="acionarBotaoExcluir()" data-check="acao" type="checkbox"> </td>
                 <td>${cadaItem.id}</td>
                 <td>${cadaItem.nome}</td>
                 <td>${cadaItem.telefone}</td>
@@ -140,6 +141,21 @@ function editarDados () {
     
 }
 
+
+//marcar todos os inputs
+function marcarTodos() {
+    let todos = document.querySelectorAll('[data-check="acao"]');
+
+    todos.forEach((cadaCheck) => {
+        if(check_all.checked === true) {
+            cadaCheck.checked = true;
+
+        } else {
+            cadaCheck.checked = false;
+        }
+        // cadaCheck.checked = check_all.checked;
+    });
+}
 
 
 
