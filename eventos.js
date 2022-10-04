@@ -1,5 +1,5 @@
 
-//criando uma constante para substituir a api
+//criando uma constante para substituir na rota api
 
 const API_URL = 'http://localhost:8002'
 
@@ -153,7 +153,7 @@ function marcarTodos() {
         } else {
             cadaCheck.checked = false;
         }
-        // cadaCheck.checked = check_all.checked;
+        
     });
     
 }
